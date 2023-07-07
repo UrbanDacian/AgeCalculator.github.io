@@ -6,7 +6,6 @@ function calculate() {
     const month = document.getElementById("month").value;
     const day = document.getElementById("day").value;
     current.setFullYear(parseInt(year), parseInt(month) - 1, parseInt(day));
-    console.log(current);
     document.getElementById("year").style.borderColor = "black";
     document.getElementById("labelYear").innerHTML = "";
     document.getElementById("labelMonth").innerHTML = "";
