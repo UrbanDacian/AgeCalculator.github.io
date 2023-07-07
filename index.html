@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <script src = "script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="design.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <div class="EntirePage">
+    <div class="page">
+      <div class = "top">
+        <div class="container">
+          <p>DAY</p>
+          <input type = "text" id = "day" placeholder="DD" class="box" style="width: 30px" maxlength="2" minlength="2">
+          <label id = "labelDay"></label>
+        </div>
+        <div class="container">
+          <p>MONTH</p>
+          <input type = "text" id = "month" placeholder="MM" class="box" style="width: 30px" maxlength="2" minlength="2">
+          <label id = "labelMonth"></label>
+        </div>
+        <div class="container">
+          <p>YEAR</p>
+          <input type = "text" id = "year" placeholder="YYYY" class="box" style="width: 35px" maxlength="4" minlength="4">
+          <label id = "labelYear"></label>
+        </div>
+        <button class="button" onclick="calculate()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+          <hr>
+      <div class="Bottom">
+        <div class="results" >
+          <p> <span id = "outputYear" style="font-size: 50px; color: blueviolet"><i>--</i></span>years</p>
+        </div>
+        <div class="results" id>
+          <p> <span id = "outputMonth" style="font-size: 50px ;color: blueviolet"><i>--</i></span>months</p>
+        </div>
+        <div class="results">
+          <p> <span  id = "outputDay" style="font-size: 50px ;color: blueviolet"><i>--</i></span>days</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Urban Dacian</a>.
+  </div>
+</body>
+</html>
