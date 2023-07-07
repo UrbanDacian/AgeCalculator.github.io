@@ -16,7 +16,7 @@ function calculate() {
     if (date.getTime() >= current.getTime() && parseInt(month) <= 11 &&  parseInt(day)<= 30) {
         const answer = (date.getTime() - current.getTime()) / (1000 * 60 * 60 * 24);
         document.getElementById("outputYear").innerText = Math.floor(answer / 365).toString();
-        document.getElementById("outputMonth").innerText = Math.floor(answer % 365 / 30 + 1).toString();
+        document.getElementById("outputMonth").innerText = Math.floor(answer % 365 / 30).toString();
         document.getElementById("outputDay").innerText = Math.floor(answer % 365 % 30).toString();
     } else {
         if (date.getFullYear() < current.getFullYear()) {
